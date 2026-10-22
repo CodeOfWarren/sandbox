@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Flex</title>
+    <style>
+
+        form, .name, .password {
+            display: flex;
+        }
+
+        .name, .password {
+            flex-flow: column;
+        }
+
+        form {
+            margin:  0 auto;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .form-box {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .name {
+            flex-grow: 1;
+            flex-basis: 150px;
+        }
+
+        .password {
+            flex-grow: 3;
+            flex-basis: 150px;
+        }
+
+        button {
+            flex-grow: 1;
+            flex-basis: 150px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+
+   
+
+<form action="/submit-url" method="POST">
+    <div class="name">
+          <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+    </div>
+
+<div class="password">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+</div>
+
+  <button type="submit">Submit</button>
+</form>
+</div>
+    
+</body>
+</html>
