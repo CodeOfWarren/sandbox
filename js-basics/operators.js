@@ -6,3 +6,9 @@ let fruits = orange + apples; // = 43 both are string
 let fruits2 = +apples + +orange; // the plus + before the variable converts the string to numbers so the result is 7;
 
 console.log(`${fruits} and ${fruits2}`);
+
+let numInc = 5;
+numInc++;
+//note increment works only in a variable not in a like 4++
+
+console.log(numInc);
